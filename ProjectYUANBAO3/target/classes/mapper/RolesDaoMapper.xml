@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yuanbao.example.dao.RolesDao">
+    <resultMap id="rolesMap" type="com.yuanbao.example.domain.Roles">
+        <result property="id" column="id"/>
+        <result property="roles_name" column="roles_name"/>
+        <result property="love" column="love"/>
+    </resultMap>
+
+    <select id="findAll" parameterType="String" resultMap="rolesMap">
+        select * from roles
+    </select>
+
+</mapper>

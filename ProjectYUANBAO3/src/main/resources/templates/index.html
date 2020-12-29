@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>springboot-thymeleaf demo</title>
+</head>
+<body>
+<script src="/js/show.js"></script>
+<div id="showInfo" style="display: none;">
+    <table border="1" width="1000">
+        <thead>
+        <tr>
+            <td>id</td>
+            <td>name</td>
+            <td>love</td>
+        </tr>
+        </thead>
+        <tr th:each="item,eee: ${roles}">
+            <td th:text="${item.id}"></td>
+            <td th:text="${item.roles_name}"></td>
+            <td th:text="${item.love}"></td>
+        </tr>
+    </table>
+</div>
+<input type="button" onclick="divShow()" value="显示信息"/>
+</body>
+</html>
