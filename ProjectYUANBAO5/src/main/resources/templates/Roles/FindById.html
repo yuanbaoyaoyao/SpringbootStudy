@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>根据id查询数据</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
+</head>
+<body>
+    <div>
+        <table border="1" width="1000">
+            <thead>
+            <tr>
+                <td>id</td>
+                <td>name</td>
+                <td>love</td>
+                <td>Edit</td>
+                <td>Delete</td>
+            </tr>
+            </thead>
+            <tr>
+                <td th:text="${roles2.id}"></td>
+                <td th:text="${roles2.name}"></td>
+                <td th:text="${roles2.love}"></td>
+                <td><a th:href="@{/updateRoles(id=${roles2.id})}">编辑</a></td>
+                <td><a th:href="@{/deleteRoles(id=${roles2.id})}">删除</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-2 control-label">
+            <a href="/AllRoles" th:href="@{/AllRoles}" class="btn btn-info">返回</a>
+        </div>
+    </div>
+</body>
+</html>
