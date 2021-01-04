@@ -7,4 +7,6 @@
 
 #ProjectYUANBAO3实现通过一个按钮显示页面信息。  
 
-#ProjectYUANBAO4实现基本增删改查。
+#ProjectYUANBAO4实现基本增删改查。  
+
+#ProjectYUANBAO5整合springsecurity。
