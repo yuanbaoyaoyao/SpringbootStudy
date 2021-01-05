@@ -9,4 +9,6 @@
 
 #ProjectYUANBAO4实现基本增删改查。  
 
-#ProjectYUANBAO5整合springsecurity。
+#ProjectYUANBAO5整合springsecurity。  
+
+#ProjectYUANBAO6整合swagger2。
