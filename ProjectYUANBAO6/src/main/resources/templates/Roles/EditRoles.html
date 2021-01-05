@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>修改信息</title>
+</head>
+<body>
+<br/><br/><br/>
+<h1>编辑信息</h1>
+<form action="/EditRoles" th:object="${roles1}" method="post">
+    <input type="text" name="id" th:value="*{id}" readonly="readonly" onselectable="true"/>
+    <input type="text" name="name" th:value="*{name}"/>
+    <input type="text" name="love" th:value="*{love}" />
+    <input type="submit" value="Submit"/>
+</form>
+</body>
+</html>
