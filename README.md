@@ -11,4 +11,6 @@
 
 #ProjectYUANBAO5整合springsecurity。  
 
-#ProjectYUANBAO6整合swagger2。
+#ProjectYUANBAO6整合swagger2。  
+
+#ProjectYUANBAO整合elasticsearch。
