@@ -13,4 +13,6 @@
 
 #ProjectYUANBAO6整合swagger2。  
 
-#ProjectYUANBAO7整合elasticsearch。
+#ProjectYUANBAO7整合elasticsearch。  
+
+#ProjectYUANBAO8整合redis。
