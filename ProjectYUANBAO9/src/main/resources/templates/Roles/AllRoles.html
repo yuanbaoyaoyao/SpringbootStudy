@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>所有信息</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
+</head>
+<body>
+<div>
+    <table border="1" width="1000">
+        <thead>
+        <tr>
+            <td>id</td>
+            <td>name</td>
+            <td>love</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+        </thead>
+        <tr th:each="r: ${roles}">
+            <td th:text="${r.id}"></td>
+            <td th:text="${r.name}"></td>
+            <td th:text="${r.love}"></td>
+            <td><a th:href="@{/updateRoles(id=${r.id})}">编辑</a></td>
+            <td><a th:href="@{/deleteRoles(id=${r.id})}">删除</a></td>
+        </tr>
+    </table>
+</div>
+<div class="d-flex justify-content-between">
+    <a href="/insert" th:href="@{/insert}" class="btn btn-info">添加</a>
+</div>
+<form action="/FindById" method="post">
+    <input type="text" placeholder="请输入id查询" name="id"/>
+    <input type="submit" value="查询"/>
+</form>
+</body>
+</html>
