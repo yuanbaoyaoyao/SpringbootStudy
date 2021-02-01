@@ -15,4 +15,6 @@
 
 #ProjectYUANBAO7整合elasticsearch。  
 
-#ProjectYUANBAO8整合redis。
+#ProjectYUANBAO8整合redis。  
+
+#ProjectYUANBAO9整合rabbitmq。
