@@ -1,0 +1,4 @@
+FROM java:8
+VOLUME /tmp
+ADD springboot-fastjson-0.0.1-SNAPSHOT.jar /yuanbao-docker.jar
+ENTRYPOINT ["java","-Djava.security.edg=file:/dev/./urandom","-jar","/yuanbao-docker.jar"]
